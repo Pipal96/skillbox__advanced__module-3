@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'TT firs Neue';
+    src: url('../fonts/TTFirsNeue-Regular.woff2') format('woff2');
+    font-display: optional;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT firs Neue';
+    src: url('../fonts/TTFirsNeue-Bold.woff2') format('woff2');
+    font-display: optional;
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --white: #fff;
+    --border-color: #C4C4C4;
+
+
+}
+
+body {
+    font-family: 'TT firs Neue', sans-serif;
+}
+
+a {
+    color: var(--white)
+}
+
+ul, ol {
+    padding: 0;
+    list-style: none;
+}
+
+.body-picture {
+    background-image: url("../img/banner-picture.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(30px);
+    min-height: 1080px;
+}
+
+.header {
+    border-bottom: 2px solid var(--border-color);
+    min-height: 138px;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.headline__flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: inherit;
+}
+
+.menu-button {
+    width: 49px;
+    height: 36px;
+    padding: 10px;
+}
+
+.menu-button__line {
+    background-color: var(--white);
+    height: 4px;
+}
+
+.menu-button__line:nth-child(1) {
+    width: 49px;
+}
+
+.menu-button__line:nth-child(2) {
+    width: 38px;
+}
+
+.menu-button__line:nth-child(3) {
+    width: 33px;
+}
+
+.menu-button__line:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.clock {
+    shape-outside: ellipse(100px 50px);
+    clip-path: ellipse();
+    background-color: var(--white);
+    width: 224px;
+    min-height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.time {
+    font-weight: 700;
+    font-size: 1.875rem;
+}
+
+
+.headline__personal-account {
+}
+
+.headline__services-link {
+
+}
